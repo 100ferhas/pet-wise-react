@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IDEs
+.idea
+
+# compiled
+*.css
+*.css.map
