@@ -1,0 +1,15 @@
+@use "../../variables.scss" as var;
+
+.button {
+    text-decoration: none;
+    border: 2px solid var.$primary;
+    color: var.$primary;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 20px;
+
+    &.primary {
+        background-color: var.$primary;
+        color: var.$primary-rev;
+    }
+}
