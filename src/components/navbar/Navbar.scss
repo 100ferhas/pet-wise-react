@@ -1,0 +1,32 @@
+@use "../../variables" as var;
+
+.navbar {
+  width: 60%;
+  min-height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &.active {
+      color: var.$primary;
+      font-weight: bolder;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+
+    > img {
+      margin-bottom: 5px;
+    }
+  }
+}

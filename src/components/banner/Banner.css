@@ -1,0 +1,17 @@
+.banner {
+  max-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.banner .banner-content .banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.banner > img {
+  max-width: 55%;
+  flex: 2;
+}
+
+/*# sourceMappingURL=Banner.css.map */
