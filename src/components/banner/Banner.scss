@@ -9,15 +9,28 @@
   align-items: center;
   padding-left: 10%;
 
+  @include var.phone() {
+    text-align: center;
+    padding: 0 10px 180px;
+  }
+
+  @include var.tablet() {
+    background-size: 50%;
+  }
+
   .banner-content {
     max-width: 450px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
 
     .banner-title {
       font-size: 3rem;
       font-weight: bold;
       text-transform: uppercase;
+
+      @include var.phone() {
+        font-size: 2.5rem;
+      }
     }
 
     .banner-description {
@@ -29,7 +42,11 @@
       display: flex;
       flex-wrap: wrap;
 
-      >a {
+      @include var.phone() {
+        justify-content: center;
+      }
+
+      > a {
         margin-bottom: 10px;
         margin-right: 10px;
       }
