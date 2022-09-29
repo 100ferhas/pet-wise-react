@@ -8,8 +8,8 @@ import Button from "../../components/button/Button";
 import hearthDog from "../../assets/images/home/hearth_dog.png"
 import {BiSupport, BsFillShieldLockFill, TbTruckDelivery} from "react-icons/all";
 import CardIcon from "../../components/card-icon/CardIcon";
-import CategoryService from "../../api/categories";
-import {Category} from "../../api/models";
+import categoryService from "../../services/categories";
+import {Category} from "../../services/models";
 import {PropagateLoader} from "react-spinners";
 import petcoLogo from "../../assets/images/home/petco_logo.png"
 import petcoBanner from "../../assets/images/home/petco_banner.png"
@@ -19,7 +19,7 @@ function Homepage() {
     const [categories, setCategories] = useState<Category[]>([]);
 
     useEffect(() => {
-        CategoryService.fetchTopCategories().then(data => {
+        categoryService.fetchTopCategories().then(data => {
             setCategories(data);
             setLoadingCategories(false);
         });
@@ -88,15 +88,6 @@ function Homepage() {
                 </div>
                 <img src={petcoBanner} alt="petco-banner"/>
             </section>
-
-            {/*<section className="best-sellers">*/}
-            {/*    <h1 className="title">*/}
-            {/*        <span className="primary">Best</span>*/}
-            {/*        <span>Seller</span>*/}
-            {/*    </h1>*/}
-            {/*</section>*/}
-
-            <br/><br/><br/><br/>
         </>
     );
 }
