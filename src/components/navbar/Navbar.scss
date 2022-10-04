@@ -24,6 +24,10 @@
       color: var.$primary;
       font-weight: bolder;
     }
+
+    &:hover:not(.logo-container) {
+      color: var.$primary;
+    }
   }
 
   .logo-container {
@@ -33,7 +37,7 @@
     align-items: center;
     font-weight: bolder;
 
-    > img {
+    >img {
       margin-bottom: 5px;
     }
   }
