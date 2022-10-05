@@ -1,13 +1,9 @@
 import React from "react";
 import "./Navbar.css";
-import { BiUserCircle, FiSearch, FiShoppingCart } from "react-icons/all";
+import {BiUserCircle, FiMenu, FiSearch, FiShoppingCart} from "react-icons/all";
 import logo from "../../assets/images/logo.png"
 
 export default function Navbar() {
-    const showSettings = (event: Event) => {
-        event.preventDefault();
-    }
-
     return (
         <>
             <nav className="navbar">
@@ -28,6 +24,20 @@ export default function Navbar() {
 
                 <a href="#"><FiShoppingCart className="primary" size="1.5rem" /></a>
                 <a href="#"><BiUserCircle className="primary" size="1.5rem" /></a>
+            </nav>
+
+            <nav className="navbar-mobile">
+
+                <a href="#" className="logo-container">
+                    <img src={logo} alt="logo" width={50} height={57} />
+                    SuperMarket
+                </a>
+
+                <div className="nav-buttons">
+                    <a href="#"><FiSearch size="2rem" /></a>
+                    <a href="#"><FiShoppingCart size="2rem" /></a>
+                    <a href="#"><FiMenu size="2rem" /></a>
+                </div>
             </nav>
         </>
     );

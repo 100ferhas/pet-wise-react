@@ -9,11 +9,11 @@
   align-items: center;
 
   @include var.phone() {
-    width: 100%; // TODO
+    display: none;
   }
 
   @include var.tablet() {
-    width: 90%;
+    width: 100%;
   }
 
   a {
@@ -37,8 +37,56 @@
     align-items: center;
     font-weight: bolder;
 
-    >img {
+    > img {
       margin-bottom: 5px;
     }
+  }
+}
+
+.navbar-mobile {
+  display: flex;
+  min-height: 150px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  @include var.tablet() {
+    display: none;
+  }
+
+  @include var.desktop() {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &.active {
+      color: var.$primary;
+      font-weight: bolder;
+    }
+
+    &:hover:not(.logo-container) {
+      color: var.$primary;
+    }
+  }
+
+  .logo-container {
+    min-height: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+
+    > img {
+      margin-bottom: 5px;
+    }
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 15px;
   }
 }
