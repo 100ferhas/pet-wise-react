@@ -1,0 +1,15 @@
+@use "../../variables.scss" as var;
+
+footer {
+  margin-top: 100px;
+  background-color: var.$primary;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .payments {
+    width: 100%;
+    text-align: center;
+  }
+}

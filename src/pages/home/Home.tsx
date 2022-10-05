@@ -17,6 +17,13 @@ import productService from "../../services/products";
 import {Rating} from "@smastrom/react-rating";
 import NoResults from "../../components/no-results/NoResults";
 import tasteLogo from "../../assets/images/home/taste_logo.png";
+import brandHusky from "../../assets/images/home/brand_husky.png";
+import brandCorgi from "../../assets/images/home/brand_corgi.png";
+import brandDog from "../../assets/images/home/brand_dog.png";
+import brandDogcat from "../../assets/images/home/brand_dogcat.png";
+import kitchenBannerLeft from "../../assets/images/home/kitchen_banner_left.png";
+import kitchenBannerRight from "../../assets/images/home/kitchen_banner_right.png";
+import Footer from "../../components/footer/Footer";
 
 function Homepage() {
     const [loadingCategories, setLoadingCategories] = useState<boolean>(true);
@@ -103,7 +110,7 @@ function Homepage() {
             <section className="petco">
                 <div className="petco-content">
                     <img src={petcoLogo} alt="petco-logo"/>
-                    <h3>Save big annually with our veterinarian recommended wellness plan.</h3>
+                    <h3 className="w-300">Save big annually with our veterinarian recommended wellness plan.</h3>
                     <Button text="Shop Now" primary/>
                 </div>
                 <img src={petcoBanner} alt="petco-banner"/>
@@ -147,13 +154,42 @@ function Homepage() {
                         <h1>
                             Taste it, love it or we'll replace it... Guaranteed!
                         </h1>
-                        <h3>
+                        <h3 className="no-margin-top w-300">
                             At Petio, we believe your dog and cat will love their food so much that if they don't... we'll help you find a replacement. That's our taste guarantee.
                         </h3>
                         <Button text="Find More" link="#" primary />
                     </div>
                 </div>
             </section>
+
+            <section className="popular-brands">
+                <h1 className="title">
+                    <span className="primary">Popular</span>
+                    <span> Brands</span>
+                </h1>
+                <div className="popular-brands-row">
+                    <img src={brandHusky} alt="brand-husky" />
+                    <img src={brandCorgi} alt="brand-corgi" />
+                    <img src={brandDog} alt="brand-dog" />
+                    <img src={brandDogcat} alt="brand-dogcat" />
+                </div>
+            </section>
+
+            <section className="shop-kitchen">
+                <img src={kitchenBannerLeft} alt="kitchenBannerLeft" />
+                <div className="shop-kitchen-content">
+                    <h1 className="title">
+                        <span>New </span>
+                        <span className="primary">Puppy </span>
+                        <span>Or Kitten?</span>
+                    </h1>
+                    <h3 className="no-margin-top w-300">Discover everything you need to make them feel at home</h3>
+                    <Button text="Shop Kitchen" link="#" primary />
+                </div>
+                <img src={kitchenBannerRight} alt="kitchenBannerRight" />
+            </section>
+
+            <Footer />
         </>
     );
 }

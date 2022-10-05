@@ -100,6 +100,7 @@
   > img {
     margin: 10px auto;
     filter: drop-shadow(-30px 30px 0px var.$primary);
+    -webkit-filter: drop-shadow(-30px 30px 0px var.$primary);
 
     @include var.phone() {
       width: 90%;
@@ -135,6 +136,7 @@
     margin: 20px;
 
     .best-seller-rating {
+      max-height: 30px;
       padding: 5px;
     }
 
@@ -216,6 +218,51 @@
       .button {
         margin-top: 20px;
       }
+    }
+  }
+}
+
+.popular-brands {
+  padding: 50px 50px 100px;
+
+  .popular-brands-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+
+    img {
+      border: 1px solid var.$primary;
+      border-radius: 10px;
+    }
+  }
+}
+
+.shop-kitchen {
+  background: #F4CA36;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+
+  .shop-kitchen-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .button {
+      margin-top: 20px;
+    }
+  }
+
+  img {
+    max-width: 30%;
+    height: fit-content;
+
+    @include var.phone() {
+      display: none;
     }
   }
 }
