@@ -163,3 +163,59 @@
     }
   }
 }
+
+.taste {
+  background: url("../../assets/images/home/wave_bg.svg") no-repeat;
+  background-size: cover;
+
+  @include var.phone() {
+    background-position: bottom right;
+  }
+
+  @include var.tablet() {
+    background-position: bottom right;
+  }
+
+  .taste-container {
+    display: flex;
+    justify-content: flex-end;
+    background: url("../../assets/images/home/cat.png") no-repeat top left;
+    background-size: contain;
+
+    @include var.phone() {
+      justify-content: center;
+      background-position: bottom center;
+    }
+
+    @include var.tablet() {
+      background-size: 50%;
+      background-position: bottom left;
+    }
+
+    .taste-content {
+      display: flex;
+      flex-flow: column wrap;
+      max-width: 30%;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 100px 0;
+      margin-right: 10%;
+
+      @include var.tablet() {
+        max-width: 40%;
+      }
+
+      @include var.phone() {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 270px;
+      }
+
+      .button {
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@ import petcoBanner from "../../assets/images/home/petco_banner.png";
 import productService from "../../services/products";
 import {Rating} from "@smastrom/react-rating";
 import NoResults from "../../components/no-results/NoResults";
+import tasteLogo from "../../assets/images/home/taste_logo.png";
 
 function Homepage() {
     const [loadingCategories, setLoadingCategories] = useState<boolean>(true);
@@ -45,7 +46,9 @@ function Homepage() {
     return (
         <>
             <PromoBanner message="Free Shipping USA & Worldwide on All Orders"/>
+
             <Navbar/>
+
             <Banner image={bannerImage} background={"#ffc632"} title="Pet food of supermarket"
                     description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form"
                     buttons={[<Button key="btn1" text="Shop Top" primary/>, <Button key="btn2" text="Shop Now"/>]}/>
@@ -134,6 +137,21 @@ function Homepage() {
                             <NoResults text="Sorry, we didn't find any result..." icon={TbMoodEmpty}/>
                         }
                     </>
+                </div>
+            </section>
+
+            <section className="taste">
+                <div className="taste-container">
+                    <div className="taste-content">
+                        <img src={tasteLogo} alt="taste-logo" />
+                        <h1>
+                            Taste it, love it or we'll replace it... Guaranteed!
+                        </h1>
+                        <h3>
+                            At Petio, we believe your dog and cat will love their food so much that if they don't... we'll help you find a replacement. That's our taste guarantee.
+                        </h3>
+                        <Button text="Find More" link="#" primary />
+                    </div>
                 </div>
             </section>
         </>
