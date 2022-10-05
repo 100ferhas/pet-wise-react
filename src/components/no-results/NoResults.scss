@@ -1,0 +1,8 @@
+@use "../../variables.scss" as var;
+
+.no-results {
+  display: flex;
+  flex-direction: column;
+  color: var.$dark-grey;
+  align-items: center;
+}

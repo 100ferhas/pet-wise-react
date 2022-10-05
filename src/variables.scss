@@ -5,6 +5,7 @@ $mobile-max-width: 576px;
 
 $primary: #F63D3D;
 $primary_rev: white;
+$dark-grey: #777;
 
 @mixin phone() {
   @media (max-width: $mobile-max-width) {

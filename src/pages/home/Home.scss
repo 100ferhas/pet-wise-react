@@ -111,3 +111,55 @@
     }
   }
 }
+
+.best-sellers {
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  align-items: center;
+  padding: 50px;
+
+  .best-sellers-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100px;
+    justify-content: center;
+  }
+
+  .best-seller {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    .best-seller-rating {
+      padding: 5px;
+    }
+
+    .best-seller-img {
+      width: 270px;
+      height: 270px;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      h3 {
+        margin: 0;
+        padding: 5px;
+      }
+    }
+
+    .best-seller-price {
+      color: var.$primary;
+      font-weight: 500;
+    }
+  }
+}
