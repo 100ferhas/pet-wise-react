@@ -1,0 +1,92 @@
+footer {
+  color: white;
+  margin-top: 100px;
+  background-color: #F63D3D;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 576px) {
+  footer {
+    align-items: center;
+  }
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover:not(.logo) {
+  color: #cccccc;
+}
+footer .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+@media (max-width: 576px) {
+  footer .links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 90%;
+  }
+  footer .links .hidden-lg {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  footer .links {
+    margin-bottom: 30px;
+  }
+  footer .links .hidden-md {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  footer .links .hidden-lg {
+    display: none;
+  }
+}
+footer .links .logo {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+footer .links > div {
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+footer .links > div a:not(.logo) {
+  line-height: 40px;
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  footer .links > div {
+    max-width: 40%;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  footer .links > div {
+    max-width: 100%;
+  }
+}
+footer .links .social {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 5px;
+}
+footer .payments {
+  text-align: center;
+}
+footer .payments img {
+  max-width: 95%;
+}
+
+/*# sourceMappingURL=Footer.css.map */

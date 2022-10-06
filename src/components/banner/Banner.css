@@ -1,0 +1,55 @@
+.banner {
+  min-height: 550px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+@media (max-width: 576px) {
+  .banner {
+    text-align: center;
+    padding: 0 10px 180px;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .banner {
+    background-size: 50%;
+  }
+}
+.banner .banner-content {
+  max-width: 450px;
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+.banner .banner-content .banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .banner .banner-content .banner-title {
+    font-size: 2rem;
+  }
+}
+.banner .banner-content .banner-description {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.banner .banner-content .banner-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+  .banner .banner-content .banner-buttons {
+    justify-content: center;
+  }
+}
+.banner .banner-content .banner-buttons > a {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=Banner.css.map */

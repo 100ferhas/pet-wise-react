@@ -1,0 +1,29 @@
+input {
+  height: 35px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #F63D3D;
+  margin: 15px 0;
+  padding: 5px;
+  font-size: 14px;
+  color: #F63D3D;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+input::placeholder {
+  color: #F63D3D;
+  opacity: 1;
+}
+input:focus-visible {
+  outline: none;
+}
+input.rev {
+  color: white;
+  border-bottom: 2px solid white;
+  caret-color: white;
+}
+input.rev::placeholder {
+  color: white;
+}
+
+/*# sourceMappingURL=Input.css.map */

@@ -1,0 +1,15 @@
+.button {
+  text-decoration: none;
+  border: 2px solid #F63D3D;
+  color: #F63D3D;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+.button.primary {
+  background-color: #F63D3D;
+  color: white;
+  box-shadow: 0 0 20px #F63D3D;
+}
+
+/*# sourceMappingURL=Button.css.map */

@@ -1,0 +1,45 @@
+@import url("~@smastrom/react-rating/style.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500&display=swap");
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.primary {
+  color: #F63D3D;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.w-300 {
+  font-weight: 300;
+}
+
+.loader {
+  margin: 40px auto;
+}
+.loader span {
+  background: #F63D3D !important;
+}
+
+/*# sourceMappingURL=index.css.map */

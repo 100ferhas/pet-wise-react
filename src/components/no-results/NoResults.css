@@ -1,0 +1,8 @@
+.no-results {
+  display: flex;
+  flex-direction: column;
+  color: #777;
+  align-items: center;
+}
+
+/*# sourceMappingURL=NoResults.css.map */

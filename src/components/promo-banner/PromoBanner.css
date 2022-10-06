@@ -1,0 +1,17 @@
+.promo-banner {
+  display: flex;
+  min-height: 50px;
+  background: #F63D3D;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .promo-banner {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=PromoBanner.css.map */
