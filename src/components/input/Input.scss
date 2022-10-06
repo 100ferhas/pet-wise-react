@@ -1,0 +1,33 @@
+@use "../../variables" as var;
+
+input {
+  height: 35px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid var.$primary;
+  margin: 15px 0;
+  padding: 5px;
+  font-size: 14px;
+  color: var.$primary;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &::placeholder {
+    color: var.$primary;
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &.rev {
+    color: var.$primary_rev;
+    border-bottom: 2px solid var.$primary_rev;
+    caret-color: var.$primary_rev;
+
+    &::placeholder {
+      color: var.$primary_rev;
+    }
+  }
+}

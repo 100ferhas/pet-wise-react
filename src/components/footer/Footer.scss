@@ -1,15 +1,99 @@
 @use "../../variables.scss" as var;
 
 footer {
+  color: var.$primary_rev;
   margin-top: 100px;
   background-color: var.$primary;
   min-height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+
+  @include var.phone() {
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover:not(.logo) {
+      color: darken(var.$primary_rev, 20%);
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+
+    @include var.phone() {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 30px;
+      max-width: 90%;
+
+      .hidden-lg {
+        display: none;
+      }
+    }
+
+    @include var.tablet() {
+      margin-bottom: 30px;
+
+      .hidden-md {
+        display: none;
+      }
+    }
+
+    @include var.desktop() {
+      .hidden-lg {
+        display: none;
+      }
+    }
+
+    .logo {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    > div {
+      max-width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      a:not(.logo) {
+        line-height: 40px;
+      }
+
+      @include var.tablet() {
+        max-width: 40%;
+        align-items: center;
+      }
+
+      @include var.phone() {
+        max-width: 100%;
+      }
+    }
+
+    .social {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      gap: 5px;
+    }
+  }
 
   .payments {
-    width: 100%;
     text-align: center;
+
+    img {
+      max-width: 95%;
+    }
   }
 }

@@ -243,7 +243,8 @@
   background: #F4CA36;
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  justify-content: space-evenly;
+  padding: 20px;
 
   .shop-kitchen-content {
     display: flex;
